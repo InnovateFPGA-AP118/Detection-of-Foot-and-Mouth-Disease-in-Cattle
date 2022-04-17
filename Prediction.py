@@ -5,7 +5,7 @@ from skimage.transform import resize
 import matplotlib.pyplot as plt
 import os
 import tkinter as tk
-from PIL import ImageTk,Image
+
 
 
 
@@ -57,13 +57,7 @@ def predict_FMD():
                         lab1=tk.Label(root,text="Healthy ="" %s percentage "%(pro1),font=50)
                         lab2=tk.Label(root,text="Diseased ="" %s percentage "%(pro2),font=50)
                         lab3=tk.Label(root,text="\nThe predicted image is : "+Categories[model.predict(l)[0]],font=50)
-                        image=Image.open(path)
-                        res_img=image.resize((150,150))
-                        img=ImageTk.PhotoImage(res_img)
-                    
-                        xx=tk.Label(root,image=img)
-                        xx.image=img
-                        xx.pack(expand="yes",fill="both",side="top",)
+                        
                     
                     
                    
@@ -119,13 +113,6 @@ def predict_FMD():
                     lab1=tk.Label(root,text="Healthy ="" %s percentage "%(pro1),font=50)
                     lab2=tk.Label(root,text="Diseased ="" %s percentage "%(pro2),font=50)
                     lab3=tk.Label(root,text="\nThe predicted image is : "+Categories[model.predict(l)[0]],font=50)
-                    image=Image.open(path)
-                    res_img=image.resize((150,150))
-                    img=ImageTk.PhotoImage(res_img)
-                    
-                    xx=tk.Label(root,image=img)
-                    xx.image=img
-                    xx.pack(expand="yes",fill="both",side="top",)
                     
                     
                    
