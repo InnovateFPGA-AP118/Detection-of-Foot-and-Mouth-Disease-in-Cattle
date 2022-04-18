@@ -28,9 +28,8 @@ The __training_model.py__ consists of the code for training and testing the data
 
 The pre-trained pickle module __img_model__ is imported in the __Prediction.py__ python module. The __Prediction.py__ interfaces the __camerain.cpp__ code using the subprocess library. Graphical User Interface is built by the usage of Tkinter library for easy accessibility of the end users.
 
+*__Camera code__*
 
-
-
-
+The __camerain.cpp__ contains code for capturing image through USB Camera.The captured image is given as an input to __Prediction.py__ to detect if the cattle is diseased or healthy.
 
 
